@@ -1,50 +1,12 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import { Col, Image } from "react-bootstrap";
-import "../style/Cartas.css";
 import Navegation from "../components/Navegation";
+import { Col, Image } from "react-bootstrap";
 import { Link, withRouter } from "react-router-dom";
 
-const Inicio = () => {
+const Productos = () => {
   return (
-    <div className="Carrusel">
+    <div>
       <Navegation />
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="./Imagenes/descarga (1).png"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3> </h3>
-            <p> </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="./Imagenes/descarga.png"
-            alt="Third slide"
-          />
-          <Carousel.Caption>
-            <h3> </h3>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="./Imagenes/descarga (3).png"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3> </h3>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
 
       <Col xs={6} md={4}>
         <Image src="./Imagenes/img1.jpg" roundedCircle className="Carta" />
@@ -88,4 +50,4 @@ const Inicio = () => {
   );
 };
 
-export default Inicio;
+export default Productos;
